@@ -1,6 +1,6 @@
 # gulp-optimizer
 
-Gulp plugin for [RaptorJS Optimizer](https://github.com/raptorjs3/optimizer).
+Gulp plugin for [RaptorJS Optimizer](https://github.com/raptorjs/optimizer).
 Replaces references to non-optimized scripts or stylesheets into a set of HTML files.
 
 ## Usage
