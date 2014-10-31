@@ -14,7 +14,7 @@ npm install --save-dev gulp-optimizer
 Then, add it to your `gulpfile.js`:
 
 ```javascript
-var optimizer = require('./gulp-optimizer')
+var optimizer = require('gulp-optimizer')
 
 gulp.task('optimizer', function(){
   gulp.src(['src/**/*.html'])

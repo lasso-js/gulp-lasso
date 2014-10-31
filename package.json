@@ -1,25 +1,26 @@
 {
-    "name": "gulp-optimizer",
-    "description": "gulp plugin for optimizer",
-    "main": "index.js",
-    "keywords": [
-        "optimizer",
-        "gulp",
-        "gulpplugin"
-    ],
-    "author": "Vinod L <vinuquest@gmail.com>",
-    "contributors": [
-        "Vinod L <vinuquest@gmail.com>"
-    ],
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/raptorjs/gulp-optimizer.git"
-    },
-    "license": "MIT",
-    "dependencies": {
-        "gulp-util": "^3.0.1",
-        "optimizer": "^1.1.5",
-        "through2": "^0.6.2"
-    },
-    "version": "0.0.2"
+  "name": "gulp-optimizer",
+  "description": "gulp plugin for optimizer",
+  "main": "index.js",
+  "keywords": [
+    "optimizer",
+    "gulp",
+    "gulpplugin"
+  ],
+  "author": "Vinod L <vinuquest@gmail.com>",
+  "contributors": [
+    "Vinod L <vinuquest@gmail.com>"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/raptorjs/gulp-optimizer.git"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "gulp-util": "^3.0.1",
+    "optimizer": "^1.1.5",
+    "raptor-util": "^1.0.4",
+    "through2": "^0.6.2"
+  },
+  "version": "0.0.2"
 }
