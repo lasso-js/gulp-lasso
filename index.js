@@ -25,6 +25,7 @@ module.exports = function (options) {
 
     delete config.dependencies;
     delete config.mode;
+    delete config.configFile;
 
     if (configFile) {
         try {
