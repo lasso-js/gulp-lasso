@@ -1,6 +1,6 @@
 'use strict';
 var through = require('through2');
-var optimizer = require('optimizer');
+var lasso = require('lasso');
 var injector = require('./lib/html-injector');
 var gutil = require('gulp-util');
 var fs = require('fs');
@@ -8,7 +8,7 @@ var extend = require('raptor-util/extend');
 var PluginError = gutil.PluginError;
 
 module.exports = function (options) {
-    //Path to a JSON optimizer configuration file
+    //Path to a JSON lasso configuration file
     var configFile = options.configFile;
     var name = options.name || 'default';
     var dependencies = options.dependencies || [];
@@ -44,14 +44,14 @@ module.exports = function (options) {
         }
 
         if (file.isStream()) {
-            this.emit('error', new PluginError('gulp-optimizer', 'Streaming not supported'));
+            this.emit('error', new PluginError('gulp-lasso', 'Streaming not supported'));
             return;
         }
 
         var str = file.contents.toString();
 
-        optimizer.configure(config);
-        optimizer.optimizePage({
+        lasso.configure(config);
+        lasso.optimizePage({
                 dependencies: dependencies,
                 name: name
             },

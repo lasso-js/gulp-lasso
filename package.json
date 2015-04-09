@@ -1,9 +1,9 @@
 {
-    "name": "gulp-optimizer",
-    "description": "gulp plugin for optimizer",
+    "name": "gulp-lasso",
+    "description": "gulp plugin for lasso",
     "main": "index.js",
     "keywords": [
-        "optimizer",
+        "lasso",
         "gulp",
         "gulpplugin"
     ],
@@ -13,12 +13,12 @@
     ],
     "repository": {
         "type": "git",
-        "url": "https://github.com/raptorjs/gulp-optimizer.git"
+        "url": "https://github.com/raptorjs/gulp-lasso.git"
     },
     "license": "MIT",
     "dependencies": {
         "gulp-util": "^3.0.1",
-        "optimizer": "^1.1.5",
+        "lasso": "^1.1.5",
         "raptor-util": "^1.0.4",
         "through2": "^0.6.2"
     },

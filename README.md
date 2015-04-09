@@ -1,25 +1,25 @@
-# gulp-optimizer
+# gulp-lasso
 
-Gulp plugin for [RaptorJS Optimizer](https://github.com/raptorjs/optimizer).
+Gulp plugin for [RaptorJS Optimizer](https://github.com/raptorjs/lasso).
 Replaces references to non-optimized scripts or stylesheets into a set of HTML files.
 
 ## Usage
 
-First, install `gulp-optimizer` as a development dependency:
+First, install `gulp-lasso` as a development dependency:
 
 ```shell
-npm install --save-dev gulp-optimizer
+npm install --save-dev gulp-lasso
 ```
 
 Then, add it to your `gulpfile.js`:
 
 ```javascript
-var optimizer = require('gulp-optimizer');
+var lasso = require('gulp-lasso');
 
-gulp.task('optimizer', function(){
+gulp.task('lasso', function(){
   gulp.src(['src/**/*.html'])
-  .pipe(optimizer({
-    "configFile": "./optimizer-config.json", //Path to a JSON optimizer configuration file
+  .pipe(lasso({
+    "configFile": "./lasso-config.json", //Path to a JSON lasso configuration file
     "dependencies": [
       "./src/css/style.css",
       "./src/css/style.less",
@@ -28,8 +28,8 @@ gulp.task('optimizer', function(){
       "require-run: ./src/js/main"
     ],
     "plugins": [
-      "optimizer-less",
-      "optimizer-jsx"
+      "lasso-less",
+      "lasso-jsx"
     ],
     "mode": 'production'
   }))
@@ -37,9 +37,9 @@ gulp.task('optimizer', function(){
 });
 
 ```
-Create the optimizer config file:
+Create the lasso config file:
 
-__optimizer-config.json:__
+__lasso-config.json:__
 
 ```javascript
 {
@@ -94,7 +94,7 @@ __src/index.html:__
 Run the following command to generate the concatenated, minifed css, js files inside static folder and references of those files are added into the html files:
 
 ```bash
-gulp optimizer
+gulp lasso
 ```
 
 This should generate the html file in ```build/```
@@ -107,11 +107,11 @@ __build/index.html:__
 <head>
     <meta charset="UTF-8">
     <title>Optimizer Demo</title>
-<!-- <optimizer-head> --><link rel="stylesheet" type="text/css" href="static/default.css"><!-- </optimizer-head> --></head>
+<!-- <lasso-head> --><link rel="stylesheet" type="text/css" href="static/default.css"><!-- </lasso-head> --></head>
 <body>
     <h1 id="header">Optimizer Demo</h1>
     <div id="main"></div>
-<!-- <optimizer-body> --><script type="text/javascript" src="static/default.js"></script>
-<script type="text/javascript">$rmod.ready();</script><!-- </optimizer-body> --></body>
+<!-- <lasso-body> --><script type="text/javascript" src="static/default.js"></script>
+<script type="text/javascript">$rmod.ready();</script><!-- </lasso-body> --></body>
 </html>
 ```
