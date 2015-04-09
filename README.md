@@ -1,6 +1,6 @@
 # gulp-lasso
 
-Gulp plugin for [RaptorJS Optimizer](https://github.com/raptorjs/lasso).
+Gulp plugin for [Lasso.js](https://github.com/raptorjs/lasso).
 Replaces references to non-optimized scripts or stylesheets into a set of HTML files.
 
 ## Usage
