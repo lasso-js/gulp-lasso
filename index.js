@@ -55,14 +55,14 @@ module.exports = function (options) {
                 dependencies: dependencies,
                 name: name
             },
-            function(err, optimizedPage) {
+            function(err, lassoPageResult) {
                 // console.log('ERROR: ', err);
                 if (err) {
                     stream.emit('error', err);
                     return;
                 }
 
-                file.contents = new Buffer(injector.inject(str, optimizedPage));
+                file.contents = new Buffer(injector.inject(str, lassoPageResult));
                 cb(null, file);
             }
         );
