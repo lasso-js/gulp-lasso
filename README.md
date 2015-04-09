@@ -83,10 +83,10 @@ __src/index.html:__
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Optimizer Demo</title>
+    <title>Lasso.js Demo</title>
 </head>
 <body>
-    <h1 id="header">Optimizer Demo</h1>
+    <h1 id="header">Lasso.js Demo</h1>
 </body>
 </html>
 ```
@@ -106,10 +106,10 @@ __build/index.html:__
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Optimizer Demo</title>
+    <title>Lasso.js Demo</title>
 <!-- <lasso-head> --><link rel="stylesheet" type="text/css" href="static/default.css"><!-- </lasso-head> --></head>
 <body>
-    <h1 id="header">Optimizer Demo</h1>
+    <h1 id="header">Lasso.js Demo</h1>
     <div id="main"></div>
 <!-- <lasso-body> --><script type="text/javascript" src="static/default.js"></script>
 <script type="text/javascript">$rmod.ready();</script><!-- </lasso-body> --></body>
