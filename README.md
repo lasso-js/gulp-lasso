@@ -1,7 +1,7 @@
 # gulp-lasso
 
 Gulp plugin for [Lasso.js](https://github.com/lasso-js/lasso).
-Replaces references to non-optimized scripts or stylesheets into a set of HTML files.
+Replaces references to scripts or stylesheets into a set of HTML files.
 
 ## Usage
 

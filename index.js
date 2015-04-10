@@ -51,7 +51,7 @@ module.exports = function (options) {
         var str = file.contents.toString();
 
         lasso.configure(config);
-        lasso.optimizePage({
+        lasso.lassoPage({
                 dependencies: dependencies,
                 name: name
             },

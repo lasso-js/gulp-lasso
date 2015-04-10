@@ -18,7 +18,7 @@
     "license": "MIT",
     "dependencies": {
         "gulp-util": "^3.0.1",
-        "lasso": "^1.1.5",
+        "lasso": "^1.8.4",
         "raptor-util": "^1.0.4",
         "through2": "^0.6.2"
     },
