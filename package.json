@@ -1,26 +1,26 @@
 {
-    "name": "gulp-lasso",
-    "description": "gulp plugin for lasso",
-    "main": "index.js",
-    "keywords": [
-        "lasso",
-        "gulp",
-        "gulpplugin"
-    ],
-    "author": "Vinod L <vinuquest@gmail.com>",
-    "contributors": [
-        "Vinod L <vinuquest@gmail.com>"
-    ],
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/lasso-js/gulp-lasso.git"
-    },
-    "license": "MIT",
-    "dependencies": {
-        "gulp-util": "^3.0.1",
-        "lasso": "^1.8.4",
-        "raptor-util": "^1.0.4",
-        "through2": "^0.6.2"
-    },
-    "version": "0.0.8"
+  "name": "gulp-lasso",
+  "description": "gulp plugin for lasso",
+  "main": "index.js",
+  "keywords": [
+    "lasso",
+    "gulp",
+    "gulpplugin"
+  ],
+  "author": "Vinod L <vinuquest@gmail.com>",
+  "contributors": [
+    "Vinod L <vinuquest@gmail.com>"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lasso-js/gulp-lasso.git"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "gulp-util": "^3.0.1",
+    "lasso": "^1.8.4",
+    "raptor-util": "^1.0.4",
+    "through2": "^0.6.2"
+  },
+  "version": "0.0.9"
 }
